@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --azure: #0290ff;
+}
+
+.navbarCont {
+  display: flex;
+  height: 5.938rem;
+  width: 100vw;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  background-color: #fff;
+}
+
+.navHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 2px);
+  border: solid 1px var(--white);
+  padding: 1.75rem 4.75rem;
+  background-color: #fff;
+}
+
+.headerTitle {
+  display: flex;
+}
+
+.planet {
+  height: 50px;
+}
+
+.navTitle {
+  height: 2.313rem;
+  margin: 0 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+}
+
+.navBar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navBar a {
+  text-decoration: none;
+  width: 3.688rem;
+  height: 1rem;
+  margin: 1.125rem 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--azure);
+}
+
+.navBar li:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.navBar li.activeLink {
+  text-decoration: underline !important;
+}
