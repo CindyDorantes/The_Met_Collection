@@ -1,0 +1,23 @@
+.submenu {
+  display: flex;
+  justify-content:flex-end;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  top: 110px;
+  height: 2rem;
+}
+
+.navlink {
+  text-decoration: none;
+  color: black;
+  text-align: start;
+}
+
+.submenu.clicked {
+    display: none;
+}
+
+.navDepartment:hover {
+  background-color: aquamarine;
+}

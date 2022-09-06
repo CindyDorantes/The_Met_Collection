@@ -19,7 +19,7 @@
 .navHeader {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: calc(100% - 2px);
   border: solid 1px var(--white);
   padding: 1.75rem 4.75rem;
@@ -28,10 +28,6 @@
 
 .headerTitle {
   display: flex;
-}
-
-.planet {
-  height: 50px;
 }
 
 .navTitle {
@@ -52,6 +48,7 @@
 
 .navBar ul {
   display: flex;
+  align-items: flex-start;
   list-style: none;
 }
 
@@ -65,14 +62,13 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.9px;
-  color: var(--azure);
+  color: black;
+}
+
+.navBar li {
+  height: 95px;
 }
 
 .navBar li:hover {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.navBar li.activeLink {
-  text-decoration: underline !important;
+  font-weight: bolder;
 }

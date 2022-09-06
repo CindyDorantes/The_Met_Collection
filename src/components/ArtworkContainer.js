@@ -1,9 +1,9 @@
 import React from 'react';
 
 const ArtworkContainer = () => (
-    <div>
-        ArtworkContainer
-    </div>
+  <div>
+    ArtworkContainer
+  </div>
 );
 
 export default ArtworkContainer;

@@ -1,9 +1,9 @@
 import React from 'react';
 
 const ArtworkInfo = () => (
-    <div>
-        ArtworkInfo
-    </div>
+  <div>
+    ArtworkInfo
+  </div>
 );
 
 export default ArtworkInfo;
