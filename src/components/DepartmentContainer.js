@@ -1,11 +1,29 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
+import { getArtwork } from '../redux/artwork/artwork';
 import DepartmentItem from './DepartmentItem';
 
 const DepartmentContainer = () => {
+  const dispatch = useDispatch();
   const resolvePath = useLocation().pathname;
   const navDepartments = useSelector((state) => state.departments);
+
+  useEffect(() => {
+    let depID = '';
+    navDepartments.map((department) => {
+      if (department.path === resolvePath) {
+        depID = department.departmentId;
+      }
+      return depID;
+    });
+    console.log('dispatch getArtwork');
+    dispatch(
+      getArtwork(
+        depID,
+      ),
+    );
+  }, [resolvePath]);
 
   return (
     <div>
@@ -14,8 +32,6 @@ const DepartmentContainer = () => {
         <h2>
           {navDepartments.map((department) => {
             let depTitle = '';
-            console.log('Deparment', department.pathname);
-            console.log('Path', resolvePath);
             if (department.path === resolvePath) {
               depTitle = department.displayName;
               return depTitle;
