@@ -1,10 +1,10 @@
 import React from 'react';
 
-const DepartmentMain = () => {
+const DepartmentMain = () => (
   <div>
     <h1>The Metropolitan Museum of Art Collection</h1>
     <h2>Select a department</h2>
-  </div>;
-};
+  </div>
+);
 
 export default DepartmentMain;

@@ -8,6 +8,7 @@ const DepartmentContainer = () => {
   const dispatch = useDispatch();
   const resolvePath = useLocation().pathname;
   const navDepartments = useSelector((state) => state.departments);
+  const artworkData = useSelector((state) => state.artwork);
 
   useEffect(() => {
     let depID = '';
@@ -17,12 +18,7 @@ const DepartmentContainer = () => {
       }
       return depID;
     });
-    console.log('dispatch getArtwork');
-    dispatch(
-      getArtwork(
-        depID,
-      ),
-    );
+    dispatch(getArtwork(depID));
   }, [resolvePath]);
 
   return (
@@ -40,7 +36,9 @@ const DepartmentContainer = () => {
           })}
         </h2>
       </div>
-      <DepartmentItem />
+      {artworkData.map((artwork) => (
+        <DepartmentItem key={artwork.objectID} artwork={artwork} />
+      ))}
     </div>
   );
 };

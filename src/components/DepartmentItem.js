@@ -1,11 +1,19 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const DepartmentItem = () => (
-  <div>
-    <div className="imgItem"><img src="https://images.metmuseum.org/CRDImages/ad/web-large/85B_ACF113R9.jpg" alt="alt" /></div>
-    <h2>Title</h2>
-    <h3>ArtistDisplayName</h3>
-  </div>
-);
+const DepartmentItem = (props) => {
+  const { artwork } = props;
+
+  return (
+    <div>
+      <div className="imgItem"><img src={artwork.primaryImageSmall} alt="alt" /></div>
+      <h2>{artwork.title}</h2>
+      <h3>{artwork.artistDisplayName}</h3>
+    </div>
+  );
+};
+
+DepartmentItem.propTypes = { artwork: PropTypes.object.isRequired };
 
 export default DepartmentItem;

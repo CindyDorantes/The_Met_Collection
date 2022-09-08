@@ -7,10 +7,9 @@ const artworkReducer = (state = [], action) => {
   const artworkData = action.payload;
   switch (action.type) {
     case GET_ARTWORK:
-      console.log(artworkData);
+      console.log('artworkData state ', artworkData);
       return artworkData;
     default:
-      console.log('default case');
       return state;
   }
 };
@@ -28,8 +27,10 @@ const getArtwork = (id) => (dispatch) => {
         dispatch({ type: GET_ARTWORK, payload: artworkItems });
         return artworkItems;
       });
+    // dispatch({ type: GET_ARTWORK, payload: artworkItems });
     return artworkItems;
   });
+  // dispatch({ type: GET_ARTWORK, payload: artworkItems });
 };
 
 export { getArtwork };
