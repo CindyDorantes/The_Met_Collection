@@ -4,14 +4,15 @@
   flex-direction: column;
   list-style: none;
   position: absolute;
-  top: 400px;
-  height: 2rem;
+  background-color: #ec4c8b;
+  top: 42px;
 }
 
 .navlink {
   text-decoration: none;
   color: black;
   text-align: start;
+  height: 2rem;
 }
 
 .submenu.clicked {
@@ -19,5 +20,5 @@
 }
 
 .navDepartment:hover {
-  background-color: aquamarine;
+  background-color: #b13968;
 }
