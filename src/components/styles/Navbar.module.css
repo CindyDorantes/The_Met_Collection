@@ -16,7 +16,6 @@
 * {
   margin: 0;
   padding: 0;
-  border: 1px solid #0290ff;
   font-family: Lato-Regular, sans-serif;
 }
 
@@ -49,8 +48,16 @@
   font-weight: bolder;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 2rem;
   letter-spacing: normal;
+  width: 5rem;
+  text-align: center;
+  border: 2px solid black;
+  margin: 0.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
 }
 
 .navBar {
@@ -78,8 +85,9 @@
 
 .navBar li {
   height: 100%;
-  padding: 0;
+  padding: 0 2px;
   margin: 0;
+  line-height: 1rem;
 }
 
 .navBar li:hover {

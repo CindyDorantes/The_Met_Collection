@@ -1,0 +1,41 @@
+.artworkContainer {
+  height: 440px;
+  width: 270px;
+  padding: 1vh 1vw;
+  background-color: #e04683;
+  border-radius: 4px;
+  margin: 3vh 0;
+}
+
+.artworkContainer:hover {
+  background-color: #b13968;
+}
+
+.artworkContainer:hover h3{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.imgItem {
+  width: 100%;
+  height: 80%;
+}
+
+.imgSmall {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.artworkTitle {
+  text-align: center;
+  padding: 8px 3px;
+}
+
+.artworkTitle h3 {
+  color: black;
+}
+
+.artworkTitle h4 {
+  color: #17202a;
+}

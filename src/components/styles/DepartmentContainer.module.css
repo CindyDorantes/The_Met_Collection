@@ -1,0 +1,20 @@
+.departmentContainer {
+  background-color: #fd5294;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh 4vw;
+}
+
+.header h1 {
+  width: 30vw;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3vh 4vw;
+}

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { getArtwork } from '../redux/artwork/artwork';
 import DepartmentItem from './DepartmentItem';
+import styles from './styles/DepartmentContainer.module.css';
 
 const DepartmentContainer = () => {
   const dispatch = useDispatch();
@@ -22,9 +23,11 @@ const DepartmentContainer = () => {
   }, [resolvePath]);
 
   return (
-    <div>
-      <div>
-        <h1>The Metropolitan Museum of Art Collection</h1>
+    <div className={styles.departmentContainer}>
+      <div className={styles.header}>
+        <h1>
+          The Metropolitan Museum of Art Collection
+        </h1>
         <h2>
           {navDepartments.map((department) => {
             let depTitle = '';
@@ -36,9 +39,11 @@ const DepartmentContainer = () => {
           })}
         </h2>
       </div>
-      {artworkData.map((artwork) => (
-        <DepartmentItem key={artwork.objectID} artwork={artwork} />
-      ))}
+      <div className={styles.itemsContainer}>
+        {artworkData.map((artwork) => (
+          <DepartmentItem key={artwork.objectID} artwork={artwork} />
+        ))}
+      </div>
     </div>
   );
 };
