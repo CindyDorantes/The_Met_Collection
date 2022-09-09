@@ -1,7 +1,6 @@
 /* eslint react/prop-types: 0 */
 import { React, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-// import { GiIonicColumn } from 'react-icons/gi';
 import styles from './styles/Navbar.module.css';
 import DepartmentDropdown from './DepartmentDropdown';
 

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useLocation } from 'react-router-dom';
+import { useLocation, NavLink } from 'react-router-dom';
 import { getArtwork } from '../redux/artwork/artwork';
 import DepartmentItem from './DepartmentItem';
 import styles from './styles/DepartmentContainer.module.css';
@@ -41,7 +41,12 @@ const DepartmentContainer = () => {
       </div>
       <div className={styles.itemsContainer}>
         {artworkData.map((artwork) => (
-          <DepartmentItem key={artwork.objectID} artwork={artwork} />
+          <NavLink
+            to={`/${artwork.objectID}`}
+            key={artwork.objectID}
+          >
+            <DepartmentItem key={artwork.objectID} artwork={artwork} />
+          </NavLink>
         ))}
       </div>
     </div>
