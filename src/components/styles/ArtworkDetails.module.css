@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mainContainer {
+  padding: 5vh;
+  background-color: #fd5294;
+}
+
+.mainContainer h4 {
+  padding: 0 0 3vh 0;
+  font-size: 25px;
+}
+
+.detailsContainer {
+    display: flex;
+}
+
+.detailsContainer p {
+  padding: 1.5vh 0;
+}
+
+.leftDetails {
+  width: 50%;
+}
+
+.rigthDetails a {
+  color: black;
+}
+
+.bold {
+  font-weight: bold;
+}

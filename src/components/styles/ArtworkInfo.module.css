@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.mainContainer {
+  display: flex; 
+  border-bottom: 0.5px solid #868181;
+  padding: 0 0 5vh 0;
+}
+
+.infoContainer {
+  width: 35vw;
+  padding: 5vh;
+}
+
+.infoContainer h1 {
+  padding: 1rem 0;
+  font-size: 45px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.infoContainer h3 {
+  color: #333333;
+
+}
+
+.imgContainer {
+  width: 600px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

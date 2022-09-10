@@ -8,7 +8,13 @@ const DepartmentItem = (props) => {
 
   return (
     <div className={styles.artworkContainer}>
-      <div className={styles.imgItem}><img src={artwork.primaryImageSmall} alt="alt" className={styles.imgSmall} /></div>
+      <div className={styles.imgItem}>
+        <img
+          src={artwork.primaryImageSmall}
+          alt={styles.artworkTitle}
+          className={styles.imgSmall}
+        />
+      </div>
       <div className={styles.artworkTitle}>
         <h3>{artwork.title}</h3>
         <h4>{artwork.artistDisplayName}</h4>

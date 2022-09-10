@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
+import styles from './styles/ArtworkContainer.module.css';
 import ArtworkInfo from './ArtworkInfo';
 import ArtworkDetails from './ArtworkDetails';
 
@@ -18,7 +19,8 @@ const ArtworkContainer = () => {
   });
 
   return (
-    <div>
+    <div className={styles.container}>
+      <p>{artworkItem.department}</p>
       <ArtworkInfo artwork={artworkItem} />
       <ArtworkDetails artwork={artworkItem} />
     </div>

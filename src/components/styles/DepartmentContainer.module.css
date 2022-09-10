@@ -18,3 +18,8 @@
   justify-content: space-around;
   padding: 3vh 4vw;
 }
+
+.itemsContainer a {
+  text-decoration: none;
+  color: black;
+}

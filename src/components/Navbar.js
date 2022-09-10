@@ -1,6 +1,7 @@
 /* eslint react/prop-types: 0 */
 import { React, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { MdOutlineMuseum } from 'react-icons/md';
 import styles from './styles/Navbar.module.css';
 import DepartmentDropdown from './DepartmentDropdown';
 
@@ -10,6 +11,11 @@ const Navbar = () => {
   return (
     <div className={styles.navbarCont}>
       <header className={styles.navHeader}>
+        <p className={styles.home}>
+          <NavLink to="/">
+            <MdOutlineMuseum />
+          </NavLink>
+        </p>
         <div className={styles.headerTitle}>
           <p className={styles.navTitle}>
             THE MET
