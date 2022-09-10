@@ -1,14 +1,12 @@
 import React from 'react';
+import styles from './styles/DepartmentMain.module.css';
+import collage from './assets/the-met-collage.png';
 
 const DepartmentMain = () => (
-  <div>
-    <div>
-      <h1>The Metropolitan Museum of Art Collection</h1>
-      <h2>Select a department</h2>
+  <div className={styles.mainContainer}>
+    <div className={styles.imgContainer}>
+      <img src={collage} alt="the met cover" />
     </div>
-    <p>
-      These collection areas study, exhibit, and care for the objects in The Met collection.
-    </p>
   </div>
 );
 

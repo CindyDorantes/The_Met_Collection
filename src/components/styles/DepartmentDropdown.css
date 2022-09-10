@@ -10,25 +10,32 @@
   list-style: none;
   position: absolute;
   background-color: #ec4c8b;
-  top: 38px;
-}
-
-.navlink {
-  text-decoration: none;
-  color: black;
-  text-align: start;
-  line-height: 1rem;
-}
-
-.submenu.clicked {
-  display: none;
+  top: 57px;
+  max-width: 20rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
 }
 
 .navDepartment {
   padding: 0;
+  margin: 0;
   width: 100%;
+  text-align: center;
 }
 
 .navDepartment:hover {
   background-color: #b13968;
+}
+
+.navlink {
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  text-align: start;
+}
+
+.submenu.clicked {
+  display: none;
 }

@@ -1,6 +1,7 @@
 /* eslint react/prop-types: 0 */
 import { React, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { BiDownArrow } from 'react-icons/bi';
 import { MdOutlineMuseum } from 'react-icons/md';
 import styles from './styles/Navbar.module.css';
 import DepartmentDropdown from './DepartmentDropdown';
@@ -27,7 +28,10 @@ const Navbar = () => {
               onMouseEnter={() => setDropdown(true)}
               onMouseLeave={() => setDropdown(false)}
             >
-              <NavLink to="/">Select Department</NavLink>
+              <NavLink to="/">
+                Select Department&nbsp;&nbsp;
+                <BiDownArrow />
+              </NavLink>
               {dropdown && <DepartmentDropdown />}
             </li>
           </ul>

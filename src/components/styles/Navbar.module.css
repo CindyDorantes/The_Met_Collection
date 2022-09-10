@@ -17,7 +17,6 @@
   margin: 0;
   padding: 0;
   font-family: Lato-Regular, sans-serif;
-  border: 1px solid #0290ff;
 }
 
 :root {
@@ -76,6 +75,7 @@
 .navBar {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .navBar ul {
@@ -94,15 +94,16 @@
   line-height: normal;
   letter-spacing: 1px;
   color: #fff;
+  margin: 0 10px;
+  text-align: center;
 }
 
 .navBar li {
   height: 100%;
-  padding: 0 2px;
   margin: 0;
-  line-height: 1rem;
 }
 
 .navBar li:hover {
-  font-weight: bolder;
+  text-decoration: underline;
+  text-decoration-color: #fff;
 }
