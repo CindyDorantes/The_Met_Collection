@@ -6,8 +6,8 @@ import { createBrowserHistory } from 'history';
 import store from '../../redux/configureStore';
 import ArtworkContainer from '../ArtworkContainer';
 
-describe('Coins test', () => {
-  test('snapshot for coins', () => {
+describe('Artwork test', () => {
+  test('snapshot for artwork', () => {
     const history = createBrowserHistory();
     const artwork = [{
       objectID: 300,

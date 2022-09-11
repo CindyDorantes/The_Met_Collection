@@ -40,5 +40,5 @@ test('fetches & receives coins after dispatching', async () => {
     </React.StrictMode>,
   );
 
-  expect(await screen.findByText(/American Decorative Arts/i)).toBeInTheDocument();
+  expect(await screen.findByText(/Select Department/i)).toBeInTheDocument();
 });
