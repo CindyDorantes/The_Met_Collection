@@ -26,9 +26,9 @@ The webapp will have several pages:
 [Live Demo Link](https://the-met-collection.netlify.app/)
 
 ## Preview
-[](./images/screenshot01.png)
-[](./images/screenshot02.png)
-[](./images/screenshot03.png)
+![](./images/screenshot01.png)
+![](./images/screenshot02.png)
+![](./images/screenshot03.png)
 
 ## Getting started
 
@@ -73,6 +73,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Thanks to our group project partners for the good colaboration
+- Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 ## 📝 License
 

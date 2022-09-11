@@ -17,7 +17,7 @@ describe('Department test', () => {
     const tree = render(
       <React.StrictMode>
         <Provider store={store}>
-          <Router history={history}>
+          <Router>
             <Routes>
               <Route path="/the-american-wing" element={<DepartmentItem props={artwork} />} />
             </Routes>
