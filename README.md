@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white) ![](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
 
-## Available Scripts
+# The Met Collection: Metrics webapp
 
-In the project directory, you can run:
+>  Web application to check a list of metrics (numeric values) that has been created making use of React and Redux. An API from The Metropolitan Museum of Art has been used to access the collection department and the artwork objects that belong to esch one.
 
-### `npm start`
+The webapp will have several pages:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- One page with a list of items that could be filtered by some cate; in the example below, it's a list of metrics that can be filtered by the country (imagine a search field to introduce the country name like Italy, Croatia, etc.). This page should be your homepage.
+- one page for the item details; in the example, the detail page for Czech Republic cities with number of views.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- Redux
+- React Boostrap
+- Deployed with netlify
+- SpaceX API
+- Jest
 
-### `npm run build`
+## Live Demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Live Demo Link](https://space-travelers-hub-1088.netlify.app/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## GETTING STARTED
 
-### `npm run eject`
+Clone this repo : git@github.com:CindyDorantes/Space-Travelers-Hub.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After cloning this project, run the following commands:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```markdown
+npm install
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The `npm install` command installs all dependencies used in the project while `npm start` is used to start the development server and view the application on the browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run the test integrated, run the folloing commadn:
 
-## Learn More
+```markdown
+npm test
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+ 👤 **Cindy Dorantes**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [@CindyDorantes](https://github.com/CindyDorantes)
+- Twitter: [@CindyDorantes10](https://twitter.com/CindyDorantes10)
+- LinkedIn: [Cindy Melisa Dorantes Sánchez](https://www.linkedin.com/in/cindydorantessanchez/)
 
-### Analyzing the Bundle Size
+👤 **Apuabi Titilope**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- GitHub: [@Eternalgratis](https://github.com/Eternalgratis)
+- Twitter: [@eternalgratis](https://twitter.com/eternalgratis)
+- LinkedIn: [Apuabi Titilope](https://www.linkedin.com/in/titilope-apuabi/)
 
-### Making a Progressive Web App
+👤 **Ijeoma Odinko**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- GitHub: [@ijeomaodinko](https://github.com/ijeomaodinko)
+- Twitter: [@Iodinko](https://twitter.com/iodinko)
+- LinkedIn: [ijeomaodinko](https://linkedin.com/in/ijeomaodinko)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Contributions, issues, and feature requests are welcome!
 
-### `npm run build` fails to minify
+Feel free to check the [issues page](../../issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Thanks to our group project partners for the good colaboration
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

@@ -20,6 +20,7 @@ const DepartmentContainer = () => {
       return depID;
     });
     dispatch(getArtwork(depID));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [resolvePath]);
 
   return (
