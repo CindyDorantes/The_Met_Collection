@@ -7,7 +7,6 @@ const artworkReducer = (state = [], action) => {
   const artworkData = action.payload;
   switch (action.type) {
     case GET_ARTWORK:
-      console.log('inside reducer ', artworkData);
       return [...artworkData];
     default:
       return state;
@@ -22,15 +21,14 @@ const getArtwork = (id) => (dispatch) => {
         const artwork = await response.json();
         return artwork;
       })
-      .then((artwork) => {
+      .then(async (artwork) => {
         artworkItems.push(artwork);
-        dispatch({ type: GET_ARTWORK, payload: artworkItems });
+        await dispatch({ type: GET_ARTWORK, payload: artworkItems });
         return artworkItems;
       });
     // dispatch({ type: GET_ARTWORK, payload: artworkItems });
     return artworkItems;
   });
-  // console.log('***', artworkItems);
   // dispatch({ type: GET_ARTWORK, payload: artworkItems });
 };
 
