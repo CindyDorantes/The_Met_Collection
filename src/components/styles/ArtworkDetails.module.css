@@ -1,6 +1,6 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .mainContainer {
@@ -14,7 +14,7 @@
 }
 
 .detailsContainer {
-    display: flex;
+  display: flex;
 }
 
 .detailsContainer p {

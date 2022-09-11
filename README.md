@@ -8,8 +8,8 @@
 
 The webapp will have several pages:
 
-- One page with a list of items that could be filtered by some cate; in the example below, it's a list of metrics that can be filtered by the country (imagine a search field to introduce the country name like Italy, Croatia, etc.). This page should be your homepage.
-- one page for the item details; in the example, the detail page for Czech Republic cities with number of views.
+- The department of interest can be choosen from a dropdown menu. Displayed in the app, you will the items that belong the selected collection.
+- One page for the item details.
 
 
 ## Built With
@@ -18,15 +18,19 @@ The webapp will have several pages:
 - Redux
 - React Boostrap
 - Deployed with netlify
-- SpaceX API
+- [The Metropolitan Museum of Art Collection API](https://metmuseum.github.io/)
 - Jest
 
 ## Live Demo
 
-[Live Demo Link](https://space-travelers-hub-1088.netlify.app/)
+[Live Demo Link](https://the-met-collection.netlify.app/)
 
+## Preview
+[](./images/screenshot01.png)
+[](./images/screenshot02.png)
+[](./images/screenshot03.png)
 
-## GETTING STARTED
+## Getting started
 
 Clone this repo : git@github.com:CindyDorantes/Space-Travelers-Hub.git
 
@@ -53,18 +57,6 @@ npm test
 - GitHub: [@CindyDorantes](https://github.com/CindyDorantes)
 - Twitter: [@CindyDorantes10](https://twitter.com/CindyDorantes10)
 - LinkedIn: [Cindy Melisa Dorantes Sánchez](https://www.linkedin.com/in/cindydorantessanchez/)
-
-👤 **Apuabi Titilope**
-
-- GitHub: [@Eternalgratis](https://github.com/Eternalgratis)
-- Twitter: [@eternalgratis](https://twitter.com/eternalgratis)
-- LinkedIn: [Apuabi Titilope](https://www.linkedin.com/in/titilope-apuabi/)
-
-👤 **Ijeoma Odinko**
-
-- GitHub: [@ijeomaodinko](https://github.com/ijeomaodinko)
-- Twitter: [@Iodinko](https://twitter.com/iodinko)
-- LinkedIn: [ijeomaodinko](https://linkedin.com/in/ijeomaodinko)
 
 
 

@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .mainContainer {
@@ -10,9 +10,9 @@
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5vh;
 }
 
 .imgContainer {
