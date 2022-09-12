@@ -27,17 +27,18 @@
   display: flex;
   border: none;
   background-color: #ec4c8b;
+  color: #fff;
 }
 
 .home {
-  font-size: 30px;
-  color: black;
+  font-size: 1rem;
+  width: 3rem;
 }
 
 .home a {
   text-decoration: none;
-  color: black;
   cursor: pointer;
+  color: #fff;
 }
 
 .navHeader {
@@ -46,25 +47,18 @@
   justify-content: space-around;
   align-items: center;
   width: calc(100% - 2px);
-  border: solid 1px var(--white);
 }
 
 .headerTitle {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 3rem;
 }
 
-.navTitle {
-  font-size: 2rem;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bolder;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2rem;
-  letter-spacing: -0.2rem;
-  width: 5rem;
+.navIcons {
+  font-size: 1rem;
   text-align: center;
-  border: 2px solid black;
   margin: 0.5rem;
 }
 
@@ -85,19 +79,6 @@
   height: 100%;
 }
 
-.navBar a {
-  text-decoration: none;
-  height: 100%;
-  font-size: 18px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 1px;
-  color: #fff;
-  margin: 0 10px;
-  text-align: center;
-}
-
 .navBar li {
   height: 100%;
   margin: 0;
@@ -106,4 +87,19 @@
 .navBar li:hover {
   text-decoration: underline;
   text-decoration-color: #fff;
+}
+
+.navBar a {
+  text-decoration: none;
+  height: 100%;
+  color: #fff;
+  margin: 0 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.arrowDown {
+  position:relative;
+  bottom: 0;
 }

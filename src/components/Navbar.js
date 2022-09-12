@@ -1,8 +1,11 @@
 /* eslint react/prop-types: 0 */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { React, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { BiDownArrow } from 'react-icons/bi';
 import { MdOutlineMuseum } from 'react-icons/md';
+import { FaMicrophone } from 'react-icons/fa';
+import { BsGearFill } from 'react-icons/bs';
+import { IoIosArrowBack, IoIosArrowDown } from 'react-icons/io';
 import styles from './styles/Navbar.module.css';
 import DepartmentDropdown from './DepartmentDropdown';
 
@@ -14,28 +17,32 @@ const Navbar = () => {
       <header className={styles.navHeader}>
         <p className={styles.home}>
           <NavLink to="/">
+            <IoIosArrowBack />
             <MdOutlineMuseum />
           </NavLink>
         </p>
-        <div className={styles.headerTitle}>
-          <p className={styles.navTitle}>
-            THE MET
-          </p>
-        </div>
         <nav className={styles.navBar}>
           <ul>
             <li
-              onMouseEnter={() => setDropdown(true)}
-              onMouseLeave={() => setDropdown(false)}
+              onClick={() => setDropdown(!dropdown)}
+              // onMouseLeave={() => setDropdown(false)}
             >
               <NavLink to="/">
-                Select Department&nbsp;&nbsp;
-                <BiDownArrow />
+                Select Department&nbsp;
+                <IoIosArrowDown className={styles.arrowDown} />
               </NavLink>
               {dropdown && <DepartmentDropdown />}
             </li>
           </ul>
         </nav>
+        <div className={styles.headerTitle}>
+          <p className={styles.navIcons}>
+            <FaMicrophone />
+          </p>
+          <p className={styles.navIcons}>
+            <BsGearFill />
+          </p>
+        </div>
       </header>
     </div>
   );
