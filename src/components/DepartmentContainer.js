@@ -46,7 +46,10 @@ const DepartmentContainer = () => {
             to={`/${artwork.objectID}`}
             key={artwork.objectID}
           >
-            <DepartmentItem key={artwork.objectID} artwork={artwork} path={resolvePath} />
+            <DepartmentItem
+              key={artwork.objectID}
+              artwork={artwork}
+            />
           </NavLink>
         ))}
       </div>

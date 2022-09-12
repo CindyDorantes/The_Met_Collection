@@ -5,20 +5,20 @@
 
 .mainContainer {
   display: flex;
-  border-bottom: 0.5px solid #868181;
-  padding: 0 0 5vh 0;
+  padding: 5vh 5vw;
+  background-color: #fc5193;
 }
 
 .infoContainer {
-  width: 35vw;
+  width: 25vw;
   padding: 5vh;
 }
 
 .infoContainer h1 {
   padding: 1rem 0;
-  font-size: 45px;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
   font-weight: bold;
+  color: #fff;
 }
 
 .infoContainer h3 {
@@ -26,8 +26,7 @@
 }
 
 .imgContainer {
-  width: 600px;
-  height: 450px;
+  height: 35vh;
   display: flex;
   justify-content: center;
   align-items: center;

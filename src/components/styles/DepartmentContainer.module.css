@@ -5,21 +5,28 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 3vh 4vw;
 }
 
 .header h1 {
-  width: 30vw;
+  font-size: 20px;
+  color: #b13968;
+}
+
+.header h2 {
+  text-align: end;
+  color: #fff;
 }
 
 .itemsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 3vh 4vw;
 }
 
 .itemsContainer a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
+

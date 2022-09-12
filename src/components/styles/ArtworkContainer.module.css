@@ -4,5 +4,6 @@
 }
 
 .container {
-  padding: 5vh 5vw;
+  padding: 0;
+  background-color: #fc5193;
 }

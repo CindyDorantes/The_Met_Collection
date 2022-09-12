@@ -1,10 +1,11 @@
 .artworkContainer {
-  height: 440px;
-  width: 270px;
-  padding: 1vh 1vw;
-  background-color: #e04683;
+  width: calc(46vw - 2px);
+  height: 100vw;
+  padding: 1vh 2vw;
+  background-color: inherit;
   border-radius: 4px;
-  margin: 3vh 0;
+  background-color: #cd4176;
+  border: 1px solid #b13968;
 }
 
 .artworkContainer:hover {
@@ -13,7 +14,7 @@
 
 .imgItem {
   width: 100%;
-  height: 80%;
+  height: 70%;
 }
 
 .imgSmall {
@@ -23,12 +24,15 @@
 }
 
 .artworkTitle {
-  text-align: center;
+  text-align: end;
   padding: 8px 3px;
 }
 
-.artworkTitle h3 {
-  color: black;
+.artworkTitle h3,
+.artworkTitle p {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: medium;
 }
 
 .artworkContainer:hover h3 {

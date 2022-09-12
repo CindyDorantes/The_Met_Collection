@@ -1,24 +1,30 @@
 * {
   padding: 0;
   margin: 0;
+  color: #fff;
 }
 
 .mainContainer {
-  padding: 5vh;
-  background-color: #fd5294;
+  padding: 0;
 }
 
 .mainContainer h4 {
-  padding: 0 0 3vh 0;
-  font-size: 25px;
+  padding: 3vh 5vh;
+  font-size: medium;
+  background-color: #b13968;
 }
 
 .detailsContainer {
   display: flex;
+  flex-direction: column;
 }
 
 .detailsContainer p {
-  padding: 1.5vh 0;
+  padding: 1.5vh 5vh;
+}
+
+.detailsContainer p:nth-child(2n) {
+  background-color: #b13968;
 }
 
 .leftDetails {

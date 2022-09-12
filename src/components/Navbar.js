@@ -1,4 +1,6 @@
 /* eslint react/prop-types: 0 */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { React, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { BiDownArrow } from 'react-icons/bi';
@@ -17,21 +19,19 @@ const Navbar = () => {
             <MdOutlineMuseum />
           </NavLink>
         </p>
-        <div className={styles.headerTitle}>
+        {/* <div className={styles.headerTitle}>
           <p className={styles.navTitle}>
             THE MET
           </p>
-        </div>
+        </div> */}
         <nav className={styles.navBar}>
           <ul>
             <li
               onMouseEnter={() => setDropdown(true)}
               onMouseLeave={() => setDropdown(false)}
             >
-              <NavLink to="/">
-                Select Department&nbsp;&nbsp;
-                <BiDownArrow />
-              </NavLink>
+              Select Department&nbsp;&nbsp;
+              <BiDownArrow />
               {dropdown && <DepartmentDropdown />}
             </li>
           </ul>
