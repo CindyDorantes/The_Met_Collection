@@ -8,13 +8,13 @@ const ArtworkInfo = (props) => {
 
   return (
     <div className={styles.mainContainer}>
+      <div className={styles.imgContainer}>
+        <img src={artwork.primaryImage} alt={artwork.title} />
+      </div>
       <div className={styles.infoContainer}>
         <h1>{artwork.title}</h1>
         <h3>{artwork.objectDate}</h3>
         <p>{artwork.artistDisplayName}</p>
-      </div>
-      <div className={styles.imgContainer}>
-        <img src={artwork.primaryImage} alt={artwork.title} />
       </div>
     </div>
   );

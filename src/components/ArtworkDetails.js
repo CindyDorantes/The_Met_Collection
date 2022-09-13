@@ -1,6 +1,7 @@
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import styles from './styles/ArtworkDetails.module.css';
 
 const ArtworkDetails = (props) => {
@@ -10,42 +11,55 @@ const ArtworkDetails = (props) => {
     <div className={styles.mainContainer}>
       <h4>Artwork Details</h4>
       <div className={styles.detailsContainer}>
-        <div className={styles.leftDetails}>
-          <p>
-            <span className={styles.bold}>Title:&nbsp;</span>
+        <div className={styles.item}>
+          <p className={styles.bold}>Title:&nbsp;</p>
+          <p className={styles.answer}>
             {artwork.title}
           </p>
-          <p>
-            <span className={styles.bold}>Artist:&nbsp;</span>
+        </div>
+        <div className={styles.item}>
+          <p className={styles.bold}>Artist:&nbsp;</p>
+          <p className={styles.answer}>
             {artwork.artistDisplayName}
-            <span>
-              {artwork.artistDisplayBio}
-            </span>
+            &nbsp;
+            {artwork.artistDisplayBio}
           </p>
-          <p>
-            <span className={styles.bold}>Date:&nbsp;</span>
+        </div>
+        <div className={styles.item}>
+          <p className={styles.bold}>Date:&nbsp;</p>
+          <p className={styles.answer}>
             {artwork.objectDate}
           </p>
-          <p>
-            <span className={styles.bold}>Culture:&nbsp;</span>
+        </div>
+        <div className={styles.item}>
+          <p className={styles.bold}>Culture:&nbsp;</p>
+          <p className={styles.answer}>
             {artwork.culture}
           </p>
         </div>
-        <div className={styles.rigthDetails}>
-          <p>
-            <span className={styles.bold}>Medium:&nbsp;</span>
+        <div className={styles.item}>
+          <p className={styles.bold}>Medium:&nbsp;</p>
+          <p className={styles.answer}>
             {artwork.medium}
           </p>
-          <p>
-            <span className={styles.bold}>Dimensions:&nbsp;</span>
+        </div>
+        <div className={styles.item}>
+          <p className={styles.bold}>Dimensions:&nbsp;</p>
+          <p className={styles.answer}>
             {artwork.dimensions}
           </p>
-          <p>
-            <span className={styles.bold}>Classifications:&nbsp;</span>
+        </div>
+        <div className={styles.item}>
+          <p className={styles.bold}>Classifications:&nbsp;</p>
+          <p className={styles.answer}>
             {artwork.classification}
           </p>
+        </div>
+        <div className={styles.item}>
           <p>
-            <a href={artwork.objectURL}>Learn more...</a>
+            <BsArrowRightCircle />
+            &nbsp;&nbsp;
+            <a href={artwork.objectURL} className={styles.learn}>Learn more...</a>
           </p>
         </div>
       </div>

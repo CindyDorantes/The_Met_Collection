@@ -20,7 +20,7 @@ const ArtworkContainer = () => {
 
   return (
     <div className={styles.container}>
-      <p>{artworkItem.department}</p>
+      <p className={styles.department}>{artworkItem.department}</p>
       <ArtworkInfo artwork={artworkItem} />
       <ArtworkDetails artwork={artworkItem} />
     </div>
