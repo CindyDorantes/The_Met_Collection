@@ -5,21 +5,39 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 3vh 4vw;
 }
 
 .header h1 {
-  width: 30vw;
+  font-size: 20px;
+  color: #b13968;
+  width: 45%;
+}
+
+.header h2 {
+  text-align: end;
+  color: #fff;
+  width: 45%;
 }
 
 .itemsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 3vh 4vw;
+}
+
+.itemsContainer>a:nth-child(4n-1),
+.itemsContainer>a:nth-child(4n-2) {
+  background-color: #d2457b !important;
 }
 
 .itemsContainer a {
   text-decoration: none;
-  color: black;
+  color: #fff;
+  background-color: #e64685;
 }
+
+/* .itemsContainer>a:nth-child(4n-1) {
+  background-color: lightseagreen !important;
+} */
