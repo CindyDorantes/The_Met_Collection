@@ -21,14 +21,16 @@ The webapp will have several pages:
 - [The Metropolitan Museum of Art Collection API](https://metmuseum.github.io/)
 - Jest
 
+
 ## Live Demo
 
 [Live Demo Link](https://the-met-collection.netlify.app/)
 
+
 ## Preview
-![](./images/screenshot01.png)
-![](./images/screenshot02.png)
-![](./images/screenshot03.png)
+![](./images/main-mobile-ss.png)![](./images/menu-mobile-ss.png)
+![](./images/department-mobile-ss.png)![](./images/artwork-mobile-ss.png)
+
 
 ## Getting started
 
@@ -43,7 +45,7 @@ npm start
 
 The `npm install` command installs all dependencies used in the project while `npm start` is used to start the development server and view the application on the browser.
 
-To run the test integrated, run the folloing commadn:
+To run the test integrated, run the following command:
 
 ```markdown
 npm test
@@ -59,7 +61,6 @@ npm test
 - LinkedIn: [Cindy Melisa Dorantes Sánchez](https://www.linkedin.com/in/cindydorantessanchez/)
 
 
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -72,7 +73,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks to our group project partners for the good colaboration
+- Thanks to my learning partners for help and support
 - Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
 
 ## 📝 License
