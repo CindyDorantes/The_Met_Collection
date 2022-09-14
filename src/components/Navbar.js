@@ -1,4 +1,5 @@
 /* eslint react/prop-types: 0 */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import { React, useState } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -25,7 +26,6 @@ const Navbar = () => {
           <ul>
             <li
               onClick={() => setDropdown(!dropdown)}
-              // onMouseLeave={() => setDropdown(false)}
             >
               <NavLink to="/">
                 Select Department&nbsp;
