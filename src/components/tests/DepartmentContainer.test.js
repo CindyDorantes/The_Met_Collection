@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../../redux/configureStore';
-import DepartmentItem from '../DepartmentItem';
+import DepartmentContainer from '../DepartmentContainer';
 
 describe('Department test', () => {
   test('snapshot for department', () => {
@@ -19,7 +19,7 @@ describe('Department test', () => {
         <Provider store={store}>
           <Router>
             <Routes>
-              <Route path="/the-american-wing" element={<DepartmentItem props={artwork} />} />
+              <Route path="/the-american-wing" element={<DepartmentContainer props={artwork} />} />
             </Routes>
           </Router>
         </Provider>

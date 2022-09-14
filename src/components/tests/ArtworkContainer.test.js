@@ -31,7 +31,7 @@ describe('Artwork test', () => {
         <Provider store={store}>
           <Router history={history}>
             <Routes>
-              <Route path="/300" element={<ArtworkContainer />} />
+              <Route path="/300" element={<ArtworkContainer props={artwork}/>} />
             </Routes>
           </Router>
         </Provider>
