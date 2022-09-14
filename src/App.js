@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="app">
       <Navbar />
       <main>
         <Routes>

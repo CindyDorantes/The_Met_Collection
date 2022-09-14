@@ -21,8 +21,9 @@ const ArtworkDetails = (props) => {
           <p className={styles.bold}>Artist:&nbsp;</p>
           <p className={styles.answer}>
             {artwork.artistDisplayName}
-            &nbsp;
-            {artwork.artistDisplayBio}
+            &nbsp;(&nbsp;
+            <i>{artwork.artistDisplayBio}</i>
+            &nbsp;)
           </p>
         </div>
         <div className={styles.item}>

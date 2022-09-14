@@ -4,7 +4,6 @@
 }
 
 .mainContainer {
-  padding: 5vh;
   background-color: #fd5294;
   padding: 0;
   margin: 0;
@@ -21,14 +20,13 @@
   flex-direction: column;
 }
 
-.detailsContainer>div:nth-child(even) {
+.detailsContainer > div:nth-child(even) {
   background-color: #d2457b !important;
 }
 
-.detailsContainer>div:nth-child(odd) {
+.detailsContainer > div:nth-child(odd) {
   background-color: #e64685 !important;
 }
-
 
 .detailsContainer p {
   padding: 1.5vh 0;
@@ -37,6 +35,7 @@
 .bold {
   font-weight: bold;
 }
+
 .item {
   display: flex;
   flex-direction: row;
@@ -52,4 +51,14 @@
 .learn {
   text-decoration: none;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .mainContainer {
+    padding: 5vh;
+  }
+
+  .mainContainer h4 {
+    padding: 2vh 5vh;
+  }
 }
