@@ -1,23 +1,46 @@
-import logo from './logo.svg';
+import { React, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { getDepartments } from './redux/departments/departments';
+import Navbar from './components/Navbar';
+import DepartmentMain from './components/DepartmentMain';
+import DepartmentContainer from './components/DepartmentContainer';
+import ArtworkContainer from './components/ArtworkContainer';
 import './App.css';
 
 function App() {
+  const dispatch = useDispatch();
+  const navDepartments = useSelector((state) => state.departments);
+  const artworkData = useSelector((state) => state.artwork);
+
+  useEffect(() => {
+    dispatch(getDepartments());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<DepartmentMain />} />
+          {navDepartments.map((department) => (
+            <Route
+              key={department.departmentId}
+              path={department.path}
+              element={<DepartmentContainer />}
+            />
+          ))}
+          {artworkData.map((artwork) => (
+            <Route
+              key={artwork.objectID}
+              path={`/${artwork.objectID}`}
+              element={<ArtworkContainer />}
+            />
+          ))}
+          {/* <Route path="/artwork-item" element={<ArtworkContainer />} /> */}
+        </Routes>
+      </main>
     </div>
   );
 }

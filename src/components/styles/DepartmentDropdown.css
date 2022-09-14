@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.submenu {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  list-style: none;
+  position: absolute;
+  background-color: #ec4c8b;
+  top: 35px;
+  max-width: 20rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+}
+
+.navDepartment {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.navDepartment:hover {
+  background-color: #b13968;
+}
+
+.navlink {
+  text-decoration: none !important;
+  text-align: start !important;
+}
+
+.submenu.clicked {
+  display: none;
+}

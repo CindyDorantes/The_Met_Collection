@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.mainContainer {
+  background-color: #fd5294;
+  padding: 0;
+  margin: 0;
+}
+
+.mainContainer h4 {
+  font-size: 25px;
+  background-color: #d2457b;
+  padding: 1vw 4vw;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsContainer > div:nth-child(even) {
+  background-color: #d2457b !important;
+}
+
+.detailsContainer > div:nth-child(odd) {
+  background-color: #e64685 !important;
+}
+
+.detailsContainer p {
+  padding: 1.5vh 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 4vw;
+  overflow-wrap: break-word;
+}
+
+.answer {
+  text-align: right;
+}
+
+.learn {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  a .mainContainer {
+    padding: 5vh;
+  }
+
+  .mainContainer h4 {
+    padding: 2vh 5vh;
+  }
+}

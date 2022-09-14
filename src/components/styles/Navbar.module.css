@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Lato-Ligth;
+  src: url('../assets/Fonts/Lato-Light.ttf');
+}
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url('../assets/Fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: Lato-Bold;
+  src: url('../assets/Fonts/Lato-Bold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato-Regular, sans-serif;
+}
+
+:root {
+  --azure: #0290ff;
+}
+
+.navbarCont {
+  display: flex;
+  border: none;
+  background-color: #ec4c8b;
+  color: #fff;
+}
+
+.home {
+  font-size: 1rem;
+  width: 3rem;
+}
+
+.home a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.navHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: calc(100% - 2px);
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 3rem;
+}
+
+.navIcons {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navBar ul {
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+  height: 100%;
+}
+
+.navBar li {
+  height: 100%;
+  margin: 0;
+}
+
+.navBar li:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+.navBar a {
+  text-decoration: none;
+  height: 100%;
+  color: #fff;
+  margin: 0 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.arrowDown {
+  position: relative;
+  bottom: 0;
+}
